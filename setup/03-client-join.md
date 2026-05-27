@@ -1,0 +1,1 @@
+# Joining workstations to domain.
