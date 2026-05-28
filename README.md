@@ -4,7 +4,7 @@ This repository provides a complete step-by-step guide for building an Active Di
 - Basic knowledge of networking and Windows Server
     - Domain
     - Domain Controller
-    - ORganizational Units (OUs)
+    - Organizational Units (OUs)
     - Users and Groups
     - Group Policy Objects (GPOs)
     - Kerberos Authentication
