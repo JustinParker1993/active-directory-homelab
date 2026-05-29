@@ -1,17 +1,32 @@
 # 🏠 Active-Directory-Homelab
-This repository provides a complete step-by-step guide for building an Active Directory homelab from scratch, configuring a production grade AD environment.  It covers the installation of Windows Server 2022 as a VM 1 Domain Controller and VM 2 Member Server and the configuration of Windows 10 clients to join the domain. This lab is designed for IT students and cybersecurity enthusiasts looking for a hands-on learning platform for sysadmin, network security, and SOC roles.  
-## Prerequisites
-- Basic knowledge of networking and Windows Server
-    - Domain
-    - Domain Controller
-    - Organizational Units (OUs)
-    - Users and Groups
-    - Group Policy Objects (GPOs)
-    - Kerberos Authentication
-    - LDAP
+## Overview
+---
+## ⚙️Technologies Used
+- VMware Workstation Player/Pro
+- Windows Server 2022 ISO
+- Windows 10 Enterprise ISO
+- Active Directory Domain Services (AD DS)
+  
+## 🔬Lab Architecture
+Physical Host (desktop/laptop)
+- Hypervisor (VMware Workstation Player/Pro, Hyper-V, or VirtualBox. Your choice.)
+  - VM 1 - DC01 (Domain Controller 
+      - Windows Server 2022
+      - Active Directory Domain Services
+      - DNS Server (192.168.10.10)
+      - DHCP Server (scope: .100 - .200)
+      - Static IP: 192.168.10.10
+   - VM 2 - SRV01 (Member Server)
+        - Windows Server 2022
+        - File shares (HR-Confidential)
+        - Optional: RODC role
+        - Static IP: 192.168.10.20
+    - VM 3 - WIN10-CLIENT
+      
+      - Windows 10 Enterprise
+      - Domain joined to corp. lab
 
-## Lab Architecture
-## Technologies Used
+      - Dynamic IP via DHCP (.100 - .200 range)
 ## Virtual Machines
 ## Network Topology
 ## Skills Demonstrated 
