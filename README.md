@@ -40,7 +40,9 @@ Physical Host (desktop/laptop)
 
       - Dynamic IP via DHCP (.100 - .200 range)
 ## Virtual Machines
-## Network Topology
+## Network TopologyUsers, O
 ## Documentation
-## Screenshots
-## Future Improvements
+## 📸 Screenshots
+1. **Active Directory Users and Computers (Users, Groups, OUD)**
+   <img width="940" height="639" alt="ADUC" src="https://github.com/user-attachments/assets/8128e8f5-0982-4c28-8099-bbdca823e568" />
+
