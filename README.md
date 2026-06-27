@@ -45,6 +45,8 @@ Physical Host (desktop/laptop)
 ## 📸 Screenshots
 1. **Active Domain Directory Services Install**
   <img width="1212" height="761" alt="Active Directory Domain Services Install" src="https://github.com/user-attachments/assets/297c1f0f-bfae-4d71-aee1-332cd29b6260" />
+  ---
+  
   <img width="1687" height="766" alt="Active Directory Domain Services Install 2" src="https://github.com/user-attachments/assets/a10ee8e1-a2e0-4597-b6b3-958d3c60fcb0" />
 
 2. **Active Directory Users and Computers (Users, Groups, OUD)**
@@ -52,6 +54,7 @@ Physical Host (desktop/laptop)
 
 3. **DNS Manager**
   <img width="865" height="617" alt="DNS Manager" src="https://github.com/user-attachments/assets/796aefb7-d50a-46ab-9ef2-74dad1b31275" />
+  ---
 
    <img width="974" height="604" alt="DNS Manager 2" src="https://github.com/user-attachments/assets/8a122911-e070-41f9-ad72-394f94fcc2b3" />
 
