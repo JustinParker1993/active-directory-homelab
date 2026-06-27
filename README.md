@@ -46,6 +46,9 @@ Physical Host (desktop/laptop)
 
 ### 1. **Active Domain Directory Services Install**
   ![Active Directory Domain Services Install] (Screenshots/Active Directory Domain Services Install.png)
+
+  ![Active Directory Domain Services Install] (Screenshots/Active Directory Domain Services Install 2.png)
+  
  ---
   
   <img width="1000" height="766" alt="Active Directory Domain Services Install 2" src="https://github.com/user-attachments/assets/a10ee8e1-a2e0-4597-b6b3-958d3c60fcb0" />
