@@ -44,11 +44,14 @@ Physical Host (desktop/laptop)
 ## Documentation
 ## 📸 Screenshots
 
-### 1. **Active Domain Directory Services Install**
+### 1. **Active Directory Domain Services Install**
+---
 
-  ![Active Directory Domain Services Install] (Screenshots/Active Directory Domain Services Install.png)
+![Acitve Directory Domain services Install](Screenshots/Active%20Directory%20Domain%20Services%20Install.png)
 
-  ![Active Directory Domain Services Install] (Screenshots/Active Directory Domain Services Install 2.png)
+---
+
+![Acitve Directory Domain services Install](Screenshots/Active%20Directory%20Domain%20Services%20Install%202.png)
 
   ---
   
