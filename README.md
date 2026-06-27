@@ -40,9 +40,21 @@ Physical Host (desktop/laptop)
 
       - Dynamic IP via DHCP (.100 - .200 range)
 ## Virtual Machines
-## Network TopologyUsers, O
+## Network Topology
 ## Documentation
 ## 📸 Screenshots
-1. **Active Directory Users and Computers (Users, Groups, OUD)**
+1. **Active Domain Directory Services Install**
+  <img width="1212" height="761" alt="Active Directory Domain Services Install" src="https://github.com/user-attachments/assets/297c1f0f-bfae-4d71-aee1-332cd29b6260" />
+  <img width="1687" height="766" alt="Active Directory Domain Services Install 2" src="https://github.com/user-attachments/assets/a10ee8e1-a2e0-4597-b6b3-958d3c60fcb0" />
+
+2. **Active Directory Users and Computers (Users, Groups, OUD)**
    <img width="940" height="639" alt="ADUC" src="https://github.com/user-attachments/assets/8128e8f5-0982-4c28-8099-bbdca823e568" />
 
+3. **DNS Manager**
+   <img width="1918" height="878" alt="image" src="https://github.com/user-attachments/assets/e615dce3-e7e8-4651-854b-ca492f2c7b7b" />
+   <img width="974" height="604" alt="DNS Manager 2" src="https://github.com/user-attachments/assets/8a122911-e070-41f9-ad72-394f94fcc2b3" />
+
+4. **Group Policy Management**
+   <img width="861" height="603" alt="Group Policy Management" src="https://github.com/user-attachments/assets/f0cc4715-14f8-4359-811f-686fc5f52fff" />
+
+   
