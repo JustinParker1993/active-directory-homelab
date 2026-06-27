@@ -51,7 +51,8 @@ Physical Host (desktop/laptop)
    <img width="940" height="639" alt="ADUC" src="https://github.com/user-attachments/assets/8128e8f5-0982-4c28-8099-bbdca823e568" />
 
 3. **DNS Manager**
-   <img width="1918" height="878" alt="image" src="https://github.com/user-attachments/assets/e615dce3-e7e8-4651-854b-ca492f2c7b7b" />
+  <img width="865" height="617" alt="DNS Manager" src="https://github.com/user-attachments/assets/796aefb7-d50a-46ab-9ef2-74dad1b31275" />
+
    <img width="974" height="604" alt="DNS Manager 2" src="https://github.com/user-attachments/assets/8a122911-e070-41f9-ad72-394f94fcc2b3" />
 
 4. **Group Policy Management**
