@@ -1,16 +1,28 @@
 # 🏠 Active-Directory-Homelab
 ## Overview
 ---
+This project demonstrates the deployment and administration of a Windows Active Directory environment in a virtualized lab.
+The goal was to simulate common enterprise identity and access management tasks performed by System Administration and SOC analysis.
+
+---
+## Skills Demonstrated 
+• Active Directory Administration → Windows Server 2022 → DNS Configuration 
+• User & Group Management
+• Group Policy Management
+• Domain Join Operations
+• Organizational Unit Design
+• Identity & Access Management Fundamentals
+• Windows Troubleshooting
 ## ⚙️Technologies Used
-- VMware Workstation Player/Pro
-- Windows Server 2022 ISO
-- Windows 10 Enterprise ISO
-- Active Directory Domain Services (AD DS)
+• VMware Workstation Player/Pro
+• Windows Server 2022 ISO
+• Windows 10 Enterprise ISO
+• Active Directory Domain Services (AD DS)
   
 ## 🔬Lab Architecture
 Physical Host (desktop/laptop)
 - Hypervisor (VMware Workstation Player/Pro, Hyper-V, or VirtualBox. Your choice.)
-  - VM 1 - DC01 (Domain Controller 
+  - VM 1 - DC01 (Domain Controller)
       - Windows Server 2022
       - Active Directory Domain Services
       - DNS Server (192.168.10.10)
@@ -29,7 +41,6 @@ Physical Host (desktop/laptop)
       - Dynamic IP via DHCP (.100 - .200 range)
 ## Virtual Machines
 ## Network Topology
-## Skills Demonstrated 
 ## Documentation
 ## Screenshots
 ## Future Improvements
