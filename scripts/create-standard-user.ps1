@@ -1,13 +1,18 @@
-# Create standard users
+# Create standard users and sets user parameters 
+$UserParams = @{
+    Name                  = 'John Smith'
+    GivenName             = 'John'
+    Surname               = 'Smith'
+    SamAccountName        = 'jsmith'
+    UserPrincipleName     = 'jsmith@corp.lab'
+    Path                  = 'OU=IT,OU=Corp,DC=corp,DC=lab'
+    AccountPassword       = ('P@ssword123!' | ConvertTo-SecureString  -AsPlainText -Force)
+    Enabled               = $true
+    ChangePasswordAtLogon = $true
+    }
 
-New-ADUser -Name 'John Smith'
--GivenName 'John'
+# Creates the user account
+    New-ADUser @UserParams
 
--Surname 'Smith'
-
--SamAccountName 'jsmith' >
--UserPrincipalName 'jsmith@corp.lab'
--Path 'OU=IT,OU=Corp,DC=corp,DC=lab'
--AccountPassword (ConvertTo-SecureString 'P@ssword123!' -AsPlainText -Force)
--PasswordNeverExpires $false *
--Enabled $true
+# Adds a "password never expires" flag after creation
+Set-ADUser -Identity 'jsmith' -PasswordNeverExpires $true 
