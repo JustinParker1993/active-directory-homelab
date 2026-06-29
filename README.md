@@ -60,19 +60,25 @@ Physical Host (desktop/laptop)
 
 ### 2. **Active Directory Users and Computers (Users, Groups, OUD)**
    ---
-   
+![ADUC](Screenshots/ADUC.png)
+
+
 
 ### 3. **DNS Manager**
  
   ---
-  
+![DNS Manager](Screenshots/DNS%20Manager.png)
 
+![DNS Manager 2](Screenshots/DNS%20Manager%202.png)
   
   ---
   
 ### 4. **Group Policy Management**
-  
+![Group Policy Management](Screenshots/Group%20Policy%20Management.png)
+
    ---
+
+### 5. 
    
 
    
