@@ -6,7 +6,7 @@ param(
     [Parameter(Mandatory=$false)] [string]$Manager
 )
 
-# Use standard variables (basic string interpolation) directly and evaluate username once
+#Username is evaluated once based on standard variables.
 $username = "$($FirstName.Substring(0,1))$LastName" | ForEach-Object ToLower
 $ouPath   = "OU=$Department,OU=Corp,DC=corp,DC=lab"
 
