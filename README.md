@@ -44,7 +44,7 @@ Physical Host (desktop/laptop)
 ## 📸 Screenshots
 
 ### 1. **Active Directory Domain Services Install**
-
+> Captures the successful install of Active Directory (AD DS).
 ![Acitve Directory Domain services Install](Screenshots/Active%20Directory%20Domain%20Services%20Install.png)
 
 
@@ -54,7 +54,6 @@ Physical Host (desktop/laptop)
   ---
   
  
-  
 
 ### 2. **Active Directory Users and Computers (Users, Groups, OUD)**
 > Created the Organizational Unit.
@@ -84,16 +83,30 @@ Physical Host (desktop/laptop)
 
 
 ### 4. **Domain Controller**
-
+![Domain Controller Verification](Screenshots/domain-controller-verification.png)
 
 ### 5. **Domain Join & Domain User Login**
-  
+
+> Captures the succeessful creation of user & staff member, John Smith.
+![Domain User](Screenshots/domain-user-jsmith-ps.png)
+
+> Captures the succeessful creation of user & staff member, Sarah Johnson.
+![Domain User](Screenshots/domain-user-sjohnson-ps.png)
+
 ### 6. **Group Policy Management**
+> Captures the group policy administration(GPO policy, password policy, login).
 ![Group Policy Management](Screenshots/Group%20Policy%20Management.png)
 
    ---
+> Shows that the group policy was correctly configured and applied.
+![Group Policy Application](Screenshots/gpo-application.png)
+
 
 ### 7. **Network & DNS Verification
-   
+> Verified that DNS had been correctly configured.
+![DNS Verification](Screenshots/dns-resolution-test.png)
+
+> Shows that all servers are properly connected to the domain controller(DC01).
+![Network Connectivity Test](Screenshots/network-connectivity-test.png)
 
    
