@@ -13,6 +13,7 @@ The goal was to simulate common enterprise identity and access management tasks 
 • Organizational Unit Design
 • Identity & Access Management Fundamentals
 • Windows Troubleshooting
+
 ## ⚙️Technologies Used
 • VMware Workstation Player/Pro
 • Windows Server 2022 ISO
@@ -44,7 +45,7 @@ Physical Host (desktop/laptop)
 ## 📸 Screenshots
 
 ### 1. **Active Directory Domain Services Install**
-> Captures the successful install of Active Directory (AD DS).
+> Captures the successful install of Active Directory (AD DS) with the server becoming the domain controller.
 ![Acitve Directory Domain services Install](Screenshots/Active%20Directory%20Domain%20Services%20Install.png)
 
 
@@ -73,7 +74,7 @@ Physical Host (desktop/laptop)
 
 
 ### 3. **DNS Manager**
- 
+> Evidence that the Active Directory's DNS infrastructure is operating properly.
   ---
 ![DNS Manager](Screenshots/DNS%20Manager.png)
 
@@ -81,16 +82,18 @@ Physical Host (desktop/laptop)
   
   ---
 
-
 ### 4. **Domain Controller**
+> Evidence that active Directory was deployed.
 ![Domain Controller Verification](Screenshots/domain-controller-verification.png)
 
 ### 5. **Domain Join & Domain User Login**
+> Captured the successful integration with the domain.
+![Domain Join Confirmation](Screenshots/domain-join-confirmation.png)
 
-> Captures the succeessful creation of user & staff member, John Smith.
+> Captures the succeessful authentication of user & staff member, John Smith(jsmith).
 ![Domain User](Screenshots/domain-user-jsmith-ps.png)
 
-> Captures the succeessful creation of user & staff member, Sarah Johnson.
+> Captures the succeessful authentication of user & staff member, Sarah Johnson(sjohnson).
 ![Domain User](Screenshots/domain-user-sjohnson-ps.png)
 
 ### 6. **Group Policy Management**
@@ -103,10 +106,10 @@ Physical Host (desktop/laptop)
 
 
 ### 7. **Network & DNS Verification
-> Verified that DNS had been correctly configured.
+> Verified that DNS had been correctly configured and DNS resolution is functioning properly.
 ![DNS Verification](Screenshots/dns-resolution-test.png)
 
-> Shows that all servers are properly connected to the domain controller(DC01).
+> Shows that all servers are properly connected to the domain controller(DC01) and that network communication is up and running.
 ![Network Connectivity Test](Screenshots/network-connectivity-test.png)
 
    
