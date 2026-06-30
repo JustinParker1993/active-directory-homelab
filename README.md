@@ -45,11 +45,10 @@ Physical Host (desktop/laptop)
 ## 📸 Screenshots
 
 ### 1. **Active Directory Domain Services Install**
----
 
 ![Acitve Directory Domain services Install](Screenshots/Active%20Directory%20Domain%20Services%20Install.png)
 
----
+
 
 ![Acitve Directory Domain services Install](Screenshots/Active%20Directory%20Domain%20Services%20Install%202.png)
 
@@ -59,9 +58,20 @@ Physical Host (desktop/laptop)
   
 
 ### 2. **Active Directory Users and Computers (Users, Groups, OUD)**
+> Created the Organizational Unit.
    ---
 ![ADUC](Screenshots/ADUC.png)
 
+> Created the IT users and admins.
+
+
+![ADUC](Screenshots/ADUC-IT-users.png)
+
+
+> Created the HR staff.
+
+
+![ADUC](Screenshots/ADUC-HR-staff.png)
 
 
 ### 3. **DNS Manager**
@@ -72,13 +82,19 @@ Physical Host (desktop/laptop)
 ![DNS Manager 2](Screenshots/DNS%20Manager%202.png)
   
   ---
+
+
+### 4. **Domain Controller**
+
+
+### 5. **Domain Join & Domain User Login**
   
-### 4. **Group Policy Management**
+### 6. **Group Policy Management**
 ![Group Policy Management](Screenshots/Group%20Policy%20Management.png)
 
    ---
 
-### 5. 
+### 7. **Network & DNS Verification
    
 
    
