@@ -39,8 +39,7 @@ Physical Host (desktop/laptop)
       - Domain joined to corp. lab
 
       - Dynamic IP via DHCP (.100 - .200 range)
-## Virtual Machines
-## Network Topology
+
 ## Documentation
 ## 📸 Screenshots
 
