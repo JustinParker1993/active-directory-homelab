@@ -45,7 +45,16 @@ Physical Host (desktop/laptop)
 
 
 ## 📸 Screenshots
-### 
+
+### 🖼️ Full Screenshot Selection Tray 
+1. [Active directory domain services install](#1-active-directory-domain-services-install)
+2. [Active Directory Users and Computers (Users, Groups, OUD)](#2-active-directory-users-and-computers-users-groups-oud)
+3. [DNS Manager](#3-dns-manager)
+4. [Domain Controller Configuration](#4-domain-controller-configuration)
+5. [Domain Join and Domain User Login](#5-domain-join--domain-user-login)
+6. [Group Policy Management](#6-group-policy-management)
+7. [Network & DNS Verification](#7-network--dns-verification)
+
 ### 1. **Active Directory Domain Services Install**
   Captures the successful install of Active Directory (AD DS) with the server becoming the domain controller.
 
@@ -86,7 +95,7 @@ Physical Host (desktop/laptop)
   
   ---
 
-### 4. **Domain Controller**
+### 4. **Domain Controller Configuration**
 
 Evidence that active Directory was deployed.
 
