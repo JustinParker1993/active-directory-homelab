@@ -5,14 +5,16 @@ This project demonstrates the deployment and administration of a Windows Active 
 The goal was to simulate common enterprise identity and access management tasks performed by System Administration and SOC analysis.
 
 ---
-## Skills Demonstrated 
-• Active Directory Administration → Windows Server 2022 → DNS Configuration 
-• User & Group Management
-• Group Policy Management
-• Domain Join Operations
-• Organizational Unit Design
-• Identity & Access Management Fundamentals
-• Windows Troubleshooting
+## 🧠Skills Demonstrated 
+
+|||
+| :--- | :--- |
+| • Active Directory Administration | • Domain Join Operations | 
+| • User & Group Management         | • Group Policy Management | • Windows Server 2022
+| • DNS Configuration               | • Organizational Unit Design
+| • Identity & Access Management Fundamentals | • Windows Server 2022 |
+| • Windows Troubleshooting |
+
 
 ## ⚙️Technologies Used
 • VMware Workstation Player/Pro
@@ -41,41 +43,43 @@ Physical Host (desktop/laptop)
 
       - Dynamic IP via DHCP (.100 - .200 range)
 
-## Documentation
-## 📸 Screenshots
 
+## 📸 Screenshots
+### 
 ### 1. **Active Directory Domain Services Install**
-> Captures the successful install of Active Directory (AD DS) with the server becoming the domain controller.
+  Captures the successful install of Active Directory (AD DS) with the server becoming the domain controller.
+
 ![Acitve Directory Domain services Install](Screenshots/Active%20Directory%20Domain%20Services%20Install.png)
 
 
 
 ![Acitve Directory Domain services Install](Screenshots/Active%20Directory%20Domain%20Services%20Install%202.png)
 
-  ---
+  
   
  
 
 ### 2. **Active Directory Users and Computers (Users, Groups, OUD)**
-> Created the Organizational Unit.
-   ---
+
+  Created the Organizational Unit.
+  
 ![ADUC](Screenshots/ADUC.png)
 
-> Created the IT users and admins.
+ Created the IT users and admins.
 
 
 ![ADUC](Screenshots/ADUC-IT-users.png)
 
 
-> Created the HR staff.
+ Created the HR staff.
 
 
 ![ADUC](Screenshots/ADUC-HR-staff.png)
 
 
 ### 3. **DNS Manager**
-> Evidence that the Active Directory's DNS infrastructure is operating properly.
-  ---
+ Evidence that the Active Directory's DNS infrastructure is operating properly.
+  
 ![DNS Manager](Screenshots/DNS%20Manager.png)
 
 ![DNS Manager 2](Screenshots/DNS%20Manager%202.png)
@@ -83,33 +87,45 @@ Physical Host (desktop/laptop)
   ---
 
 ### 4. **Domain Controller**
-> Evidence that active Directory was deployed.
+
+Evidence that active Directory was deployed.
+
 ![Domain Controller Verification](Screenshots/domain-controller-verification.png)
 
 ### 5. **Domain Join & Domain User Login**
-> Captured the successful integration with the domain.
+
+ Captured the successful integration with the domain.
+ 
 ![Domain Join Confirmation](Screenshots/domain-join-confirmation.png)
 
-> Captures the succeessful authentication of user & staff member, John Smith(jsmith).
+ Captures the succeessful authentication of user & staff member, John Smith(jsmith).
+
 ![Domain User](Screenshots/domain-user-jsmith-ps.png)
 
-> Captures the succeessful authentication of user & staff member, Sarah Johnson(sjohnson).
+ Captures the succeessful authentication of user & staff member, Sarah Johnson(sjohnson).
+ 
 ![Domain User](Screenshots/domain-user-sjohnson-ps.png)
 
 ### 6. **Group Policy Management**
-> Captures the group policy administration(GPO policy, password policy, login).
+ Captures the group policy administration(GPO policy, password policy, login).
+ 
+ 
 ![Group Policy Management](Screenshots/Group%20Policy%20Management.png)
 
-   ---
-> Shows that the group policy was correctly configured and applied.
+
+   
+ Shows that the group policy was correctly configured and applied.
+ 
 ![Group Policy Application](Screenshots/gpo-application.png)
 
 
 ### 7. **Network & DNS Verification
-> Verified that DNS had been correctly configured and DNS resolution is functioning properly.
+ Verified that DNS had been correctly configured and DNS resolution is functioning properly.
+ 
 ![DNS Verification](Screenshots/dns-resolution-test.png)
 
-> Shows that all servers are properly connected to the domain controller(DC01) and that network communication is up and running.
+ Shows that all servers are properly connected to the domain controller(DC01) and that network communication is up and running.
+ 
 ![Network Connectivity Test](Screenshots/network-connectivity-test.png)
 
    
