@@ -46,7 +46,7 @@ Physical Host (desktop/laptop)
 
 ## 📸 Screenshots
 
-### 🖼️ Full Screenshot Selection Tray 
+### :zap: Quick Jump
 1. [Active directory domain services install](#1-active-directory-domain-services-install)
 2. [Active Directory Users and Computers (Users, Groups, OUD)](#2-active-directory-users-and-computers-users-groups-oud)
 3. [DNS Manager](#3-dns-manager)
