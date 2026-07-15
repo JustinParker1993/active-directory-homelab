@@ -43,24 +43,7 @@ The goal was to simulate common enterprise identity and access management tasks 
 • Document the deployment, configuration, and testing process.
 
 ---  
-## Skills Demonstrated 
 
-|||
-| :--- | :--- |
-| • Active Directory Administration | • Domain Join Operations | 
-| • User & Group Management         | • Group Policy Management | • Windows Server 2022
-| • DNS Configuration               | • Organizational Unit Design
-| • Identity & Access Management Fundamentals | • Windows Server 2022 |
-| • Windows Troubleshooting |
-
----
-## Technologies Used
-• VMware Workstation Player/Pro
-• Windows Server 2022 ISO
-• Windows 11 Enterprise ISO
-• Active Directory Domain Services (AD DS)
-
----
 ## Lab Architecture
 Physical Host (desktop/laptop)
 - Hypervisor (VMware Workstation Player/Pro)
@@ -103,7 +86,7 @@ flowchart TB
         Policies[Password & Account Lockout Policies]
     end
 
-    subgraph Client["💻 Domain Workstation (CLIENT01)"]
+    subgraph Client["💻 Domain Workstation (WIN11)"]
         Join[Domain Joined]
         Login[User Authentication]
         GPClient[Group Policy Client]
@@ -119,13 +102,33 @@ flowchart TB
     end
 
     VMware --> DC
-    VMware --> Client
+    VMware --> Client 
 
     DC -->|Kerberos / LDAP| Client
     Client --> Validation
 ```   
 
 ---
+
+## Technologies Used
+• VMware Workstation Player/Pro
+• Windows Server 2022 ISO
+• Windows 11 Enterprise ISO
+• Active Directory Domain Services (AD DS)
+
+---
+## Skills Demonstrated 
+
+|||
+| :--- | :--- |
+| • Active Directory Administration | • Domain Join Operations | 
+| • User & Group Management         | • Group Policy Management | • Windows Server 2022
+| • DNS Configuration               | • Organizational Unit Design
+| • Identity & Access Management Fundamentals | • Windows Server 2022 |
+| • Windows Troubleshooting |
+
+---
+
 ## Screenshots
 
 ### :zap: Quick Jump
