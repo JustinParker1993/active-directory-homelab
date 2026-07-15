@@ -10,7 +10,9 @@ This lab establishes the foundational active Directory environment that will be 
 
 In this lab you will see a simulated coporate network by deploying a windows Server 2022 Domain Controller, configuring Active Directory Domain Service (AD DS) and DNS, and joining a Windows 10 workstation to the domain.
 
-This project demonstrates the deployment and implementation of a Windows servers administration, Active Directory fundamentals environment, Identity and Access Management, and enterprise networking in a virtualized lab. The goal was to simulate common enterprise identity and access management tasks performed by Systems Administration, Help Desk, and Security Operations Center (SOC) environments. 
+This project demonstrates the deployment and implementation of a Windows servers administration, Active Directory fundamentals environment, Identity and Access Management, and enterprise networking in a virtualized lab.
+
+The goal was to simulate common enterprise identity and access management tasks performed by Systems Administration, Help Desk, and Security Operations Center (SOC) environments. 
 
 
 ---
