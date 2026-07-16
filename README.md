@@ -44,7 +44,7 @@ The goal was to simulate common enterprise identity and access management tasks 
 
 ---  
 
-## Lab Architecture
+## Lab Environment
 Physical Host (desktop/laptop)
 - Hypervisor (VMware Workstation Player/Pro)
   - VM 1 - DC01 (Domain Controller)
@@ -66,47 +66,31 @@ Physical Host (desktop/laptop)
       - Dynamic IP via DHCP (.100 - .200 range)
      
 ---
-## Network Topology
-```mermaid
-flowchart TB
+## Network Architecture
+          
 
-    Internet((Internet))
-    FortiGate[FortiGate Firewall]
-    VMware[VMware Virtual Network]
+                     AD_LAB Network (192.168.10.0/24)
 
-    Internet --> FortiGate
-    FortiGate --> VMware
-
-    subgraph DC["🖥️ Domain Controller (DC01)"]
-        AD[Active Directory Domain Services]
-        DNS[DNS Server]
-        GPO[Group Policy Management]
-        OU[Organizational Units]
-        Users[Users & Security Groups]
-        Policies[Password & Account Lockout Policies]
-    end
-
-    subgraph Client["💻 Domain Workstation (WIN11)"]
-        Join[Domain Joined]
-        Login[User Authentication]
-        GPClient[Group Policy Client]
-        Shared[Shared Resource Access]
-    end
-
-    subgraph Validation["🔒 Security Validation"]
-        Kerberos[Kerberos Authentication]
-        DNSRes[DNS Resolution]
-        Lockout[Account Lockout Testing]
-        Events[Event Viewer Analysis]
-        Failed[Failed Login Detection]
-    end
-
-    VMware --> DC
-    VMware --> Client 
-
-    DC -->|Kerberos / LDAP| Client
-    Client --> Validation
-```   
+                               Internet
+                                   │
+                         Router / Gateway
+                                   │
+                           VMware Workstation
+                                   │
+                     Virtual Network (VMnet)
+                                   │
+             ┌─────────────────────┴─────────────────────┐
+             │                                           │
+    ┌─────────────────────┐                   ┌─────────────────────┐
+    │ Domain Controller   │                   │ Client Workstation  │
+    │---------------------│                   │---------------------│
+    │ Hostname: DC01      │                   │ Hostname: WIN11     │
+    │ Windows Server 2022 │                   │ Windows 11 Pro      │
+    │ AD DS               │◄────────────────►│ Domain Joined        │
+    │ DNS                 │   Kerberos       │ Group Policy Client  │
+    │                     │   LDAP           │                      │
+    │ 192.168.10.10      │   DNS            │ 192.168.10.20       │
+    └─────────────────────┘                   └─────────────────────┘
 
 ---
 
@@ -117,6 +101,132 @@ flowchart TB
 • Active Directory Domain Services (AD DS)
 
 ---
+
+## Implementation
+
+### Phase 1 – Environment Planning
+
+**Purpose**
+
+Design the virtual environment and define the network architecture before deployment.
+
+**Tasks Completed**
+- Selected VMware Workstation as the virtualization platform.
+- Planned the Active Directory network topology.
+- Assigned static IP addresses for lab systems.
+- Configured the virtual network.
+- Defined the domain structure (corp.local).
+- Planned server and workstation roles.
+
+---
+
+
+### Phase 2 – Windows Server Deployment
+
+**Purpose**
+
+Install and configure the Windows Server that will become the Domain Controller.
+
+**Tasks Completed**
+- Installed Windows Server 2022.
+- Configured hostname (DC01).
+- Assigned a static IP address.
+- Verified network connectivity.
+- Applied system updates.
+- Performed initial server configuration.
+
+---
+
+### Phase 3 – Active Directory Configuration
+
+**Purpose**
+
+Deploy Active Directory Domain Services and create the domain environment.
+
+**Tasks Completed**
+- Installed Active Directory Domain Services (AD DS).
+- Promoted the server to a Domain Controller.
+- Created the corp.local domain.
+- Configured DNS.
+- Verified Active Directory replication and services.
+
+---
+### Phase 4 – Directory Administration
+
+**Purpose**
+
+Configure the organizational structure used to manage users and computers.
+
+**Tasks Completed**
+- Created Organizational Units (OUs).
+- Created user accounts.
+- Created security groups.
+- Managed computer objects.
+- Configured administrative accounts.
+
+---
+
+### Phase 5 – Windows 11 Client Deployment
+
+**Purpose**
+
+Deploy a Windows 11 workstation and integrate it into the domain.
+
+**Tasks Completed**
+- Installed Windows 11.
+- Configured network settings.
+- Joined the workstation to the domain.
+- Verified domain authentication.
+- Tested user logins.
+
+---
+
+### Phase 6 – Group Policy Implementation
+
+**Purpose**
+
+Centralize management of security and workstation configurations.
+
+**Tasks Completed**
+- Configured Group Policy Objects (GPOs).
+- Applied password complexity requirements.
+- Configured account lockout policies.
+- Verified policy application using gpupdate and gpresult.
+- Confirmed Group Policy inheritance.
+
+---
+### Phase 7 – Security Validation
+
+**Purpose**
+
+Verify that Active Directory security controls function correctly.
+
+ **Tasks Completed**
+- Tested domain authentication.
+- Simulated failed login attempts.
+- Triggered account lockout.
+- Reviewed Windows Security Event Logs.
+- Verified DNS resolution.
+- Confirmed Kerberos authentication.
+
+---
+### Phase 8 – Documentation
+
+**Purpose**
+
+Produce technical documentation suitable for a professional portfolio.
+
+**Tasks Completed**
+
+- Documented deployment procedures.
+- Created network diagrams.
+- Recorded screenshots.
+- Documented testing methodology.
+- Organized project repository.
+- Published project to GitHub.
+
+---
+
 ## Skills Demonstrated 
 
 |||
