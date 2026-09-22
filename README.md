@@ -8,11 +8,11 @@ This lab establishes the foundational active Directory environment that will be 
 ---
 ## Overview
 
-In this lab you will see a simulated coporate network by deploying a windows Server 2022 Domain Controller, configuring Active Directory Domain Service (AD DS) and DNS, and joining a Windows 10 workstation to the domain.
+In this lab you will see a simulated coporate network by deploying a windows Server 2022 Domain Controller, configuring Active Directory Domain Service (AD DS) and DNS, and joining a Windows 11 workstation to the domain.
 
 This project demonstrates the deployment and implementation of a Windows servers administration, Active Directory fundamentals environment, Identity and Access Management, and enterprise networking in a virtualized lab.
 
-The goal was to simulate common enterprise identity and access management tasks performed by Systems Administration, Help Desk, and Security Operations Center (SOC) environments. 
+The goal was to simulate common enterprise identity and access management tasks performed by Systems Administration, Help Desk, Network Operations Center (NOC), and Security Operations Center (SOC) environments. 
 
 
 ---
@@ -25,12 +25,12 @@ The goal was to simulate common enterprise identity and access management tasks 
 
 • Configure Active Directory DNS.
 
-• Deploy a Windows 11 Pro (client) workstation.
+• Deploy a Windows 11 Enterprise (client) workstation.
 
 • Join a Windows 11 client to the active directory domain.
 
 • Create a new active Directory forest 
-(corp.local)
+(corp.lab)
 
 • Create and manage Organizational Units (OUs), users, security groups, and computer objects.
 
@@ -61,37 +61,39 @@ Physical Host (desktop/laptop)
     - VM 3 - WIN11-CLIENT
       
       - Windows 11 Enterprise
-      - Domain joined to corp. lab
+      - Domain joined to corp.lab
 
       - Dynamic IP via DHCP (.100 - .200 range)
      
 ---
 ## Network Architecture
-          
+```text
+                    AD_LAB Network (192.168.10.0/24)
 
-                     AD_LAB Network (192.168.10.0/24)
-
-                               Internet
-                                   │
-                         Router / Gateway
-                                   │
+                                Internet
+                                    │
+                            Router / Gateway
+                                    │
                            VMware Workstation
-                                   │
-                     Virtual Network (VMnet)
-                                   │
-             ┌─────────────────────┴─────────────────────┐
-             │                                           │
-    ┌─────────────────────┐                   ┌─────────────────────┐
-    │ Domain Controller   │                   │ Client Workstation  │
-    │---------------------│                   │---------------------│
-    │ Hostname: DC01      │                   │ Hostname: WIN11     │
-    │ Windows Server 2022 │                   │ Windows 11 Pro      │
-    │ AD DS               │◄────────────────►│ Domain Joined        │
-    │ DNS                 │   Kerberos       │ Group Policy Client  │
-    │                     │   LDAP           │                      │
-    │ 192.168.10.10      │   DNS            │ 192.168.10.20       │
-    └─────────────────────┘                   └─────────────────────┘
+                                    │
+                         Virtual Network (VMnet)
+                                    │
+           ┌────────────────────────┼────────────────────────┐
+           │                        │                        │
+┌──────────┴──────────┐  ┌──────────┴──────────┐  ┌──────────┴──────────┐
+│ DC01                │  │ SRV01               │  │ WIN11               │
+│ Domain Controller   │  │ Member Server       │  │ Client Workstation  │
+├─────────────────────┤  ├─────────────────────┤  ├─────────────────────┤
+│ Windows Server 2022 │  │ Windows Server 2022 │  │ Win 11 Enterprise   │
+│ AD DS               │  │ File Shares         │  │ Domain Joined       │
+│ DNS                 │  │ (HR-Confidential)   │  │ Group Policy Client │
+│ DHCP Server         │  │ Domain Joined       │  │ DHCP Client         │
+│ Static IP:          │  │ Static IP:          │  │ Dynamic IP:         │
+│ 192.168.10.10       │  │ 192.168.10.20       │  │ 192.168.10.100-200  │
+└─────────────────────┘  └─────────────────────┘  └─────────────────────┘
 
+                        Kerberos · LDAP · DNS · DHCP · SMB
+```
 ---
 
 ## Technologies Used
@@ -115,7 +117,7 @@ Design the virtual environment and define the network architecture before deploy
 - Planned the Active Directory network topology.
 - Assigned static IP addresses for lab systems.
 - Configured the virtual network.
-- Defined the domain structure (corp.local).
+- Defined the domain structure (corp.lab).
 - Planned server and workstation roles.
 
 ---
@@ -146,7 +148,7 @@ Deploy Active Directory Domain Services and create the domain environment.
 **Tasks Completed**
 - Installed Active Directory Domain Services (AD DS).
 - Promoted the server to a Domain Controller.
-- Created the corp.local domain.
+- Created the corp.lab domain.
 - Configured DNS.
 - Verified Active Directory replication and services.
 
