@@ -3,12 +3,12 @@
 ## Project Status
 ✅ Completed
 
-This lab establishes the foundational active Directory environment that will be expanded in future labs including Group Policy Objects, Organizational Units (OUs), firewall configuration (preferably FortiGate), Network troubleshooting, Window Event Logging, Splunk integration, Sysmon deployment, and Active Directory security monitoring.
+This lab establishes the foundational Active Directory environment that will be expanded in future labs including Group Policy Objects, Organizational Units (OUs), firewall configuration (preferably FortiGate), Network troubleshooting, Windows Event Logging, Splunk integration, Sysmon deployment, and Active Directory security monitoring.
 
 ---
 ## Overview
 
-In this lab you will see a simulated coporate network by deploying a windows Server 2022 Domain Controller, configuring Active Directory Domain Service (AD DS) and DNS, and joining a Windows 11 workstation to the domain.
+In this lab you will see a simulated corporate network by deploying a windows Server 2022 Domain Controller, configuring Active Directory Domain Service (AD DS) and DNS, and joining a Windows 11 workstation to the domain.
 
 This project demonstrates the deployment and implementation of a Windows servers administration, Active Directory fundamentals environment, Identity and Access Management, and enterprise networking in a virtualized lab.
 
@@ -27,7 +27,7 @@ The goal was to simulate common enterprise identity and access management tasks 
 
 • Deploy a Windows 11 Enterprise (client) workstation.
 
-• Join a Windows 11 client to the active directory domain.
+• Join a Windows 11 client to the Active Directory domain.
 
 • Create a new active Directory forest 
 (corp.lab)
@@ -56,7 +56,6 @@ Physical Host (desktop/laptop)
    - VM 2 - SRV01 (Member Server)
         - Windows Server 2022
         - File shares (HR-Confidential)
-        - Optional: RODC role
         - Static IP: 192.168.10.20
     - VM 3 - WIN11-CLIENT
       
@@ -244,7 +243,7 @@ Produce technical documentation suitable for a professional portfolio.
 ## Screenshots
 
 ### :zap: Quick Jump
-1. [Active directory domain services install](#1-active-directory-domain-services-install)
+1. [Active Directory domain services install](#1-active-directory-domain-services-install)
 2. [Active Directory Users and Computers (Users, Groups, OUD)](#2-active-directory-users-and-computers-users-groups-oud)
 3. [DNS Manager](#3-dns-manager)
 4. [Domain Controller Configuration](#4-domain-controller-configuration)
@@ -294,7 +293,7 @@ Produce technical documentation suitable for a professional portfolio.
 
 ### 4. **Domain Controller Configuration**
 
-Evidence that active Directory was deployed.
+Evidence that Active Directory was deployed.
 
 ![Domain Controller Verification](Screenshots/domain-controller-verification.png)
 
