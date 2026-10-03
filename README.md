@@ -118,12 +118,12 @@ Physical Host (desktop/laptop)
 Design the virtual environment and define the network architecture before deployment.
 
 **Tasks Completed**
-- Selected VMware Workstation as the virtualization platform.
-- Planned the Active Directory network topology.
-- Assigned static IP addresses for lab systems.
-- Configured the virtual network.
-- Defined the domain structure (corp.lab).
-- Planned server and workstation roles.
+- [x] Selected VMware Workstation as the virtualization platform.
+- [x] Planned the Active Directory network topology.
+- [x] Assigned static IP addresses for lab systems.
+- [x] Configured the virtual network.
+- [x] Defined the domain structure (corp.lab).
+- [x] Planned server and workstation roles.
 
 ---
 
@@ -135,12 +135,12 @@ Design the virtual environment and define the network architecture before deploy
 Install and configure the Windows Server that will become the Domain Controller.
 
 **Tasks Completed**
-- Installed Windows Server 2022.
-- Configured hostname (DC01).
-- Assigned a static IP address.
-- Verified network connectivity.
-- Applied system updates.
-- Performed initial server configuration.
+- [x] Installed Windows Server 2022.
+- [x] Configured hostname (DC01).
+- [x] Assigned a static IP address.
+- [x] Verified network connectivity.
+- [x] Applied system updates.
+- [x] Performed initial server configuration.
 
 ---
 
@@ -151,11 +151,11 @@ Install and configure the Windows Server that will become the Domain Controller.
 Deploy Active Directory Domain Services and create the domain environment.
 
 **Tasks Completed**
-- Installed Active Directory Domain Services (AD DS).
-- Promoted the server to a Domain Controller.
-- Created the corp.lab domain.
-- Configured DNS.
-- Verified Active Directory replication and services.
+- [x] Installed Active Directory Domain Services (AD DS).
+- [x] Promoted the server to a Domain Controller.
+- [x] Created the corp.lab domain.
+- [x] Configured DNS.
+- [x] Verified Active Directory replication and services.
 
 ---
 ### Phase 4 – Directory Administration
@@ -165,11 +165,11 @@ Deploy Active Directory Domain Services and create the domain environment.
 Configure the organizational structure used to manage users and computers.
 
 **Tasks Completed**
-- Created Organizational Units (OUs).
-- Created user accounts.
-- Created security groups.
-- Managed computer objects.
-- Configured administrative accounts.
+- [x] Created Organizational Units (OUs).
+- [x] Created user accounts.
+- [x] Created security groups.
+- [x] Managed computer objects.
+- [x] Configured administrative accounts.
 
 ---
 
@@ -180,11 +180,11 @@ Configure the organizational structure used to manage users and computers.
 Deploy a Windows 11 workstation and integrate it into the domain.
 
 **Tasks Completed**
-- Installed Windows 11.
-- Configured network settings.
-- Joined the workstation to the domain.
-- Verified domain authentication.
-- Tested user logins.
+- [x] Installed Windows 11.
+- [x] Configured network settings.
+- [x] Joined the workstation to the domain.
+- [x] Verified domain authentication.
+- [x] Tested user logins.
 
 ---
 
@@ -195,11 +195,11 @@ Deploy a Windows 11 workstation and integrate it into the domain.
 Centralize management of security and workstation configurations.
 
 **Tasks Completed**
-- Configured Group Policy Objects (GPOs).
-- Applied password complexity requirements.
-- Configured account lockout policies.
-- Verified policy application using gpupdate and gpresult.
-- Confirmed Group Policy inheritance.
+- [x] Configured Group Policy Objects (GPOs).
+- [x] Applied password complexity requirements.
+- [x] Configured account lockout policies.
+- [x] Verified policy application using gpupdate and gpresult.
+- [x] Confirmed Group Policy inheritance.
 
 ---
 ### Phase 7 – Security Validation
@@ -209,12 +209,12 @@ Centralize management of security and workstation configurations.
 Verify that Active Directory security controls function correctly.
 
  **Tasks Completed**
-- Tested domain authentication.
-- Simulated failed login attempts.
-- Triggered account lockout.
-- Reviewed Windows Security Event Logs.
-- Verified DNS resolution.
-- Confirmed Kerberos authentication.
+- [x] Tested domain authentication.
+- [x] Simulated failed login attempts.
+- [x] Triggered account lockout.
+- [x] Reviewed Windows Security Event Logs.
+- [x] Verified DNS resolution.
+- [x] Confirmed Kerberos authentication.
 
 ---
 ### Phase 8 – Documentation
@@ -225,12 +225,12 @@ Produce technical documentation suitable for a professional portfolio.
 
 **Tasks Completed**
 
-- Documented deployment procedures.
-- Created network diagrams.
-- Recorded screenshots.
-- Documented testing methodology.
-- Organized project repository.
-- Published project to GitHub.
+- [x] Documented deployment procedures.
+- [x] Created network diagrams.
+- [x] Recorded screenshots.
+- [x] Documented testing methodology.
+- [x] Organized project repository.
+- [x] Published project to GitHub.
 
 ---
 
