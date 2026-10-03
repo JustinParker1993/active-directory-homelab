@@ -1,9 +1,15 @@
 # Enterprise Active Directory Deployment Lab
 
 ## Project Status
-✅ Completed
 
-This lab establishes the foundational Active Directory environment that will be expanded in future labs including Group Policy Objects, Organizational Units (OUs), firewall configuration (preferably FortiGate), Network troubleshooting, Windows Event Logging, Splunk integration, Sysmon deployment, and Active Directory security monitoring.
+🟡 **In Progress (Active Monitoring Phase)**
+
+This lab establishes the foundational Active Directory environment, which is currently being expanded to include security monitoring and incident response tools:
+* **Sysmon Deployment:** Installing advanced endpoint logging to track process creation and network connections.
+* **Log Aggregation:** Configuring Windows Event Forwarding (WEF) to centralize authentication and security logs.
+* **SIEM Integration:** Deploying an on-premises SIEM (Splunk/Elastic) to ingest logs, build dashboards, and simulate threat detection.
+
+
 
 ---
 ## Overview
@@ -225,6 +231,21 @@ Produce technical documentation suitable for a professional portfolio.
 - Documented testing methodology.
 - Organized project repository.
 - Published project to GitHub.
+
+---
+
+### Phase 9 – Security Monitoring & Incident Response (Active)
+
+**Purpose**
+Transform the static Active Directory lab into a live Security Operations Center (SOC) environment for monitoring and threat detection.
+
+**Tasks In Progress / Completed**
+- [x] Configure advanced Windows Security Audit Policies via GPO.
+- [ ] Deploy SwiftOnSecurity Sysmon configuration to domain endpoints.
+- [ ] Set up a centralized log collector server.
+- [ ] Integrate Splunk Enterprise / Elastic SIEM for centralized log ingestion.
+- [ ] Simulate credential dumping (lsass) and brute-force attacks to validate alert rules.
+
 
 ---
 
